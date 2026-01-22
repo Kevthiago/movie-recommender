@@ -1,0 +1,75 @@
+# --- Python Bytecode & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Ambientes Virtuais & Gerenciamento de Pacotes ---
+# Se usar venv padrão
+env/
+venv/
+ENV/
+# Se o Poetry criar a venv dentro do projeto
+.venv/
+
+# --- Distribuição / Builds ---
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Jupyter Notebooks ---
+# Ignora os checkpoints automáticos do Jupyter
+.ipynb_checkpoints
+# Opcional: Ignorar profile do ipython
+profile_default/
+ipython_config.py
+
+# --- IDEs & Editores (VS Code, Pycharm, etc) ---
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- DADOS (CRUCIAL PARA DATA SCIENCE) ---
+# Ignora todos os dados para não estourar o limite do GitHub
+# Apenas a estrutura de pastas vazia deve ser mantida (via .gitkeep se necessário), mas os arquivos não.
+data/raw/*
+data/processed/*
+data/output/*
+# Exceção: Se quiser comitar arquivos pequenos de exemplo, você pode usar !
+# !data/raw/exemplo_pequeno.csv
+
+# --- Logs e Relatórios ---
+*.log
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.reports.xml
+
+# --- Modelos Treinados (Artefatos Pesados) ---
+# Evite versionar binários grandes no git padrão (use DVC ou Git LFS para isso se precisar)
+*.pkl
+*.pickle
+*.h5
+*.joblib
+*.model
+
+# --- Segurança & Variáveis de Ambiente ---
+# NUNCA comite este arquivo
+.env
+.env.local
