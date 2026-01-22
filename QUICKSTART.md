@@ -6,7 +6,7 @@ Ter o sistema funcionando em **5 minutos**.
 
 ## 📋 Checklist Pré-requisitos
 
-- [ ] Python 3.10+ instalado (testado no 3.14)
+- [ ] Python 3.14 instalado
 - [ ] pip instalado
 - [ ] Conexão com internet
 
@@ -15,8 +15,8 @@ Ter o sistema funcionando em **5 minutos**.
 ### Windows
 
 ```cmd
-# 1. Extrair o projeto
-# Extraia o arquivo .tar.gz para uma pasta
+# 1. Clonar o repositório
+# Salvar o projeto na sua máquina
 
 # 2. Abrir terminal na pasta
 cd movie-recommender-clean
@@ -40,8 +40,8 @@ uvicorn src.api.main:app --reload
 ### Linux/Mac
 
 ```bash
-# 1. Extrair
-tar -xzf movie-recommender-clean.tar.gz
+# 1. Clonar
+Salvar o projeto na sua máquina
 cd movie-recommender-clean
 
 # 2. Instalar
