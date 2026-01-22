@@ -28,8 +28,6 @@ uvicorn src.api.main:app --reload
 # Teste: GET /recommend/1?k=5
 ```
 
-**Pronto!** Sistema funcionando com 610 usuários e 9.742 filmes do MovieLens! 🎉
-
 ---
 
 ## 📋 Visão Geral
@@ -322,7 +320,7 @@ MIT License - veja [LICENSE](LICENSE) para detalhes
 
 ## 👤 Desenvolvido por
 
-**Kevin**
+**Kevin Thiago**
 
 Projeto educacional de Sistema de Recomendação usando Matrix Factorization e Python 3.14.
 
