@@ -73,3 +73,7 @@ coverage.xml
 # NUNCA comite este arquivo
 .env
 .env.local
+
+# --- MLflow ---
+mlruns/
+mlartifacts/

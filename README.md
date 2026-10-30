@@ -1,8 +1,8 @@
 # 🎬 Movie Recommendation System
 
-Sistema de recomendação de filmes profissional e pronto para produção, **100% compatível com Python 3.14**.
+Sistema de recomendação de filmes construído passo a passo como projeto de estudo de Machine Learning.
 
-[![Python 3.14](https://img.shields.io/badge/python-3.14-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-green.svg)](https://fastapi.tiangolo.com/)
 [![scikit-learn](https://img.shields.io/badge/sklearn-1.5+-orange.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -11,17 +11,19 @@ Sistema de recomendação de filmes profissional e pronto para produção, **100
 
 ## ⚡ Quick Start (3 minutos)
 
+Pré-requisito: [uv](https://docs.astral.sh/uv/getting-started/installation/) (ele baixa o Python 3.12 sozinho).
+
 ```cmd
-# 1. Instalar dependências
-pip install -r requirements.txt
+# 1. Criar o ambiente e instalar dependências (lê pyproject.toml + uv.lock)
+uv sync
 
 # 2. Baixar dados e treinar modelo
-python -m src.data.loader
-python -m src.features.build_features
-python -m src.models.train_model
+uv run python -m src.data.loader
+uv run python -m src.features.build_features
+uv run python -m src.models.train_model
 
 # 3. Iniciar API
-uvicorn src.api.main:app --reload
+uv run uvicorn src.api.main:app --reload
 
 # 4. Testar no navegador
 # Abra: http://localhost:8000/docs
